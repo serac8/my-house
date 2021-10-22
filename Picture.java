@@ -15,6 +15,7 @@ public class Picture
     private Square window;
     private Triangle roof;
     private Circle sun;
+    private Square floor;
 
     /**
      * Constructor for objects of class Picture
@@ -48,12 +49,49 @@ public class Picture
         roof.moveVertical(-60);
         roof.makeVisible();
 
+        floor = new Square();
+        
+        floor.changeSize(550);
+        floor.moveDown();
+        floor.moveDown();
+        floor.moveDown();
+        floor.moveDown();
+        floor.moveDown();
+        floor.moveDown();
+        floor.moveDown();
+        floor.moveLeft();
+        floor.moveLeft();
+        floor.moveLeft();
+        floor.moveLeft();
+        floor.moveLeft();
+        floor.moveLeft();
+        floor.moveLeft();
+        floor.moveLeft();
+        floor.moveLeft();
+        floor.moveLeft();
+        floor.moveLeft();
+        floor.moveLeft();
+        floor.moveLeft();
+        floor.moveLeft();
+        floor.moveLeft();
+        floor.moveLeft();
+        floor.makeVisible();
+        floor.changeColor("green");
+        
         sun = new Circle();
         sun.changeColor("yellow");
         sun.moveHorizontal(100);
-        sun.moveVertical(-40);
+        
         sun.changeSize(80);
+        sun.moveDown();
+        sun.moveDown();
+        sun.moveDown();
+        sun.moveDown();
+        sun.moveDown();
         sun.makeVisible();
+        sun.slowMoveVertical(-180);
+        
+        
     }
 
     /**
