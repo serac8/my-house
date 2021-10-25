@@ -90,6 +90,7 @@ public class Picture
         sun.moveDown();
         sun.makeVisible();
         sun.slowMoveVertical(-180);
+    
         
         
     }
@@ -121,4 +122,17 @@ public class Picture
             sun.changeColor("yellow");
         }
     }
+    
+    /**
+     * 
+     */
+    public void atardecer()
+    {
+        if (sun != null)
+        {
+                sun.slowMoveVertical(180);
+        }
+            
+    }
 }
+
